@@ -21,9 +21,7 @@
 title: ""
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  A Plethora of Projects and Particulars Powered by Procrastination and Personal Peculiarities 
-  (And other pickings beginning with the letter P). My collection of side quests, main quests, 
-  journeys, wanderings, and dilly dallyings. I'm Sophia.
+  hello
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "dangomangoyessir.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb

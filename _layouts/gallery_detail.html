@@ -1,0 +1,28 @@
+---
+layout: page 
+---
+
+<div class="row g-4 px-5">
+	{% for work in page.works %}
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                    {% if work.title %}
+                        <h5 class="card-title">{{work.title}}</h5>
+                    {% endif %}
+                    {% if work.text %}
+                        <p class="card-text">{{ work.text }}</p>
+                    {% endif %}
+                    {% if work.url %}
+                        <a href="#" class="btn btn-primary">View</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-md-4 align-self-center">
+               <img src="{{ work.image }}" alt="{{ work.title }} image" class="img-fluid w-100">
+            </div>
+        </div>
+    </div>
+	{% endfor %}
+</div>

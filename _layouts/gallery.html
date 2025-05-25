@@ -3,7 +3,27 @@ layout: page
 ---
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-masonry='{"percentPosition": true }'>
-	{{ content }}
+	{% for work in page.works %}
+	<div class="col">
+		<div class="card">
+			<img src="{{ work.image }}" alt="{{ work.title }} image" class="img-fluid w-100">
+			<div class="card-body">
+				{% if work.title %}
+					<h5 class="card-title">{{work.title}}</h5>
+				{% endif %}
+
+				{% if work.text %}
+					<p class="card-text">{{ work.text }}</p>
+				{% endif %}
+
+				{% if work.url %}
+					<a href="#" class="btn btn-primary">View</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+	<!-- {{ content }} -->
 </div>
 
 	

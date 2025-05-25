@@ -1,12 +1,21 @@
 ---
-layout: gallery
+layout: gallery_detail
 title: Ceramics
----
 
-<div class="gallery">
-{% for file in site.static_files %}
-	{% if file.path contains '/assets/images/' and file.path contains 'placeholder' %}
-			<img src="{{ file.path }}" alt="{{ file.name }}" class="img-fluid w-100">
-	{% endif %}
-{% endfor %}
-</div>
+works:
+  - title: "Example Work 1 "
+    url: 
+    image: "/assets/images/placeholder.jpg"
+    text: "Some quick example text to build on the card title and make up the bulk of the card’s content."
+
+  - title: "Example Work 2 "
+    url: "#"
+    image: "/assets/images/placeholder.jpg"
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+
+  - title: "Example Work 3 "
+    url: 
+    image: "/assets/images/placeholder.jpg"
+    text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+
+---

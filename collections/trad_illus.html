@@ -1,19 +1,26 @@
 ---
 layout: gallery
 title: Traditional Illustrations
----
 
-{% for file in site.static_files %}
-	{% if file.path contains '/assets/images/' and file.path contains 'placeholder' %}
-	<div class="col">
-		<div class="card">
-			<img src="{{ file.path }}" alt="{{ file.name }}" class="img-fluid w-100">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-				<a href="#" class="btn btn-primary">Go somewhere</a>
-			</div>
-		</div>
-	</div>
-	{% endif %}
-{% endfor %}
+works:
+  - title: "Example Work 1 "
+    url: 
+    image: "/assets/images/placeholder.jpg"
+    text: "Some quick example text to build on the card title and make up the bulk of the card’s content."
+
+  - title: "Example Work 2 "
+    url: "#"
+    image: "/assets/images/placeholder.jpg"
+    text: 
+
+  - title: "Example Work 3 "
+    url: 
+    image: "/assets/images/placeholder.jpg"
+    text: 
+
+  - title:
+    url: 
+    image: "/assets/images/placeholder.jpg"
+    text: 
+
+---
